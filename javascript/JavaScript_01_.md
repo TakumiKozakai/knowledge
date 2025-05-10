@@ -502,3 +502,37 @@ import('./App.js').then(app => {
     console.log(a.getAppTitle());
 });
 ```
+
+### React用語 - マウント, アンマウント -
+
+- マウント：コンポーネントがDOMに追加されること
+- アンマウント：コンポーネントがDOMから削除されること
+- レンダリング：コンポーネントの状態に応じて、DOMを描画すること
+- 再レンダリング：マウント済みのコンポーネントの状態が変更され、DOMが再描画されること
+- アップデート：コンポーネントの状態が変更され、再描画されること
+
+### JavaScriptの真偽判定
+
+### 真偽判定の例
+
+JavaScriptにおける値の真偽判定。
+
+```javascript
+const nullValue = null;
+if (nullValue) // false
+```
+
+| 値             | 判定結果 | 説明                                         |
+|----------------|----------|-------------------------------------------|
+| `null`         | `false`  | `null` は falsy 値                         |
+| `undefined`    | `false`  | `undefined` は falsy 値                    |
+| `0`            | `false`  | 数値 `0` は falsy 値                        |
+| `1`            | `true`   | 数値 `1` は truthy 値                       |
+| `NaN`          | `false`  | `NaN` は falsy 値                          |
+| `''` (空文字列) | `false`  | 空文字列は falsy 値                          |
+| `'abc'`        | `true`   | 非空文字列は truthy 値                       |
+| `'0'`          | `true`   | 非空文字列（たとえ内容が `0` でも）は truthy 値 |
+| `[]`           | `true`   | 空配列は truthy 値                          |
+| `{}`           | `true`   | 空オブジェクトは truthy 値                    |
+| `false`        | `false`  | ブール値 `false` は falsy 値                 |
+| `true`         | `true`   | ブール値 `true` は truthy 値                 |
